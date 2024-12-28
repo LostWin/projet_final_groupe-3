@@ -1,0 +1,16 @@
+---
+- name: Déployer Odoo avec Docker Compose
+  docker_compose:
+    project_name: odoo
+    definition:
+      version: "3"
+      services:
+        odoo:
+          image: odoo:13
+          ports:
+            - "8069:8069"
+          environment:
+            - ODOO_URL={{ odoo_url }}
+            - PGADMIN_URL={{ pgadmin_url }}
+          volumes:
+            - /data/odoo:/var/lib/odoo

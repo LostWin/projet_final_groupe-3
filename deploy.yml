@@ -1,0 +1,10 @@
+- hosts: web
+  tasks:
+    - name: Déployer l'application Flask
+      docker_container:
+        name: ic-webapp
+        image: lostwin/vlad:1.0
+        ports:
+          - "8080:8080"
+        state: started
+
