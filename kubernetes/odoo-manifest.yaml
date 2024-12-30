@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: odoo
-        image: odoo:13.0
+        image: odoo:17.0
         ports:
         - containerPort: 8069
