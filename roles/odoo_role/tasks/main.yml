@@ -3,10 +3,10 @@
   docker_compose:
     project_name: odoo
     definition:
-      version: "3"
+      version: "3.3"
       services:
         odoo:
-          image: odoo:13
+          image: odoo:17
           ports:
             - "8069:8069"
           environment:
