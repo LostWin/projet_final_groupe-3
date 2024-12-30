@@ -32,9 +32,9 @@ spec:
         - containerPort: 80
         env:
         - name: PGADMIN_DEFAULT_EMAIL
-          value: "admin@example.com" # Changez par une adresse e-mail valide
+          value: "purtisngos@gmail.com"
         - name: PGADMIN_DEFAULT_PASSWORD
-          value: "admin123" # Changez par un mot de passe sécurisé
+          value: "admin123" 
         volumeMounts:
         - name: pgadmin-data
           mountPath: /var/lib/pgadmin
