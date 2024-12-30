@@ -64,7 +64,7 @@ spec:
     spec:
       containers:
       - name: odoo
-        image: odoo:16
+        image: odoo:17
         ports:
         - containerPort: 8069
         envFrom:
@@ -164,7 +164,7 @@ spec:
     spec:
       containers:
       - name: postgres
-        image: postgres:13
+        image: postgres:12
         ports:
         - containerPort: 5432
         env:
